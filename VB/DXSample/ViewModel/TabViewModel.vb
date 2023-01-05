@@ -1,17 +1,20 @@
-﻿Imports DevExpress.Mvvm.DataAnnotations
+Imports DevExpress.Mvvm.DataAnnotations
 Imports System
 
 Namespace DXSample.ViewModel
-    <POCOViewModel> _
+
+    <POCOViewModel>
     Public Class TabViewModel
-        Public Overridable Property Updated() As Date
-        Public Overridable Property Content() As Object
+
+        Public Overridable Property Updated As Date
+
+        Public Overridable Property Content As Object
 
         Public Sub New()
             Updated = Date.Now
             Content = Guid.NewGuid()
-
         End Sub
+
         Public Sub UpdateDocument()
             Updated = Date.Now
             Content = Guid.NewGuid()

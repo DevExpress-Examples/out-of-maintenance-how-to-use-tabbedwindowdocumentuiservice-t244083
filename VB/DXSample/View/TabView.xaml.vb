@@ -1,11 +1,12 @@
-﻿Imports System.Windows.Controls
+Imports System.Windows.Controls
 
 Namespace DXSample.View
-    Partial Public Class TabView
+
+    Public Partial Class TabView
         Inherits UserControl
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
         End Sub
     End Class
 End Namespace

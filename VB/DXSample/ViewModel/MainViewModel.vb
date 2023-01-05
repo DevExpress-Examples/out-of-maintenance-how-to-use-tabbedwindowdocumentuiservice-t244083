@@ -1,15 +1,16 @@
-﻿Imports DevExpress.Mvvm
+Imports DevExpress.Mvvm
 Imports DevExpress.Mvvm.POCO
 Imports DevExpress.Mvvm.DataAnnotations
-Imports System
 Imports System.Linq
 
 Namespace DXSample.ViewModel
-    <POCOViewModel> _
+
+    <POCOViewModel>
     Public Class MainViewModel
-        Protected ReadOnly Property DocumentManagerService() As IDocumentManagerService
+
+        Protected ReadOnly Property DocumentManagerService As IDocumentManagerService
             Get
-                Return Me.GetService(Of IDocumentManagerService)()
+                Return GetService(Of IDocumentManagerService)()
             End Get
         End Property
 
